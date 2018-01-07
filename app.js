@@ -10,7 +10,7 @@ if (ch == 'add') {
     if (note) {
         notes.logNote(note);
     }
-} else if (ch == 'list') {
+} else if (ch === 'list') {
     var note = notes.get();
     console.log('printing' + note.length + 'note(s).');
     note.forEach((note) => notes.logNote(note));
